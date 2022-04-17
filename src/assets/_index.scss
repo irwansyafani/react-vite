@@ -1,0 +1,45 @@
+@import "./scss/cover";
+@import "./scss/card";
+@import "./scss/navbar";
+
+.row {
+  justify-content: space-between;
+}
+
+.container {
+  @include media-breakpoint-down(md) {
+    padding: 3rem 2rem !important;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+// ===============================================================
+// PAGES
+// ===============================================================
+
+section.product-detail {
+  .d-flex {
+    overflow-y: scroll;
+  }
+  .info {
+    width: fit-content;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+.product-img {
+  min-width: calc(100vh - 54px);
+  @include media-breakpoint-down(md) {
+    min-width: calc(100vh - 84px);
+  }
+}

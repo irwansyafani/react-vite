@@ -1,0 +1,44 @@
+.card-product,
+.card {
+  width: 18rem;
+  cursor: pointer;
+  overflow: hidden;
+  @include media-breakpoint-down(xl) {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 14rem;
+  }
+  .card-img-top {
+    object-fit: cover;
+  }
+}
+
+.card-product {
+  .card-body {
+    height: fit-content;
+    background: linear-gradient(
+      0,
+      rgba(#000, 0.7),
+      rgba(#000, 0.5),
+      transparent
+    );
+    color: #fff;
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.card-collection {
+  .card-body {
+    color: #fff;
+    background: #b2977a;
+    h5 {
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.navbar {
+  @include media-breakpoint-down(md) {
+    height: 84px;
+    .container {
+      padding: 1rem 2rem !important;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
